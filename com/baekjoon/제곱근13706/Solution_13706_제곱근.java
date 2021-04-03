@@ -1,0 +1,14 @@
+package com.baekjoon.제곱근13706;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Solution_13706_제곱근 {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		long N = Long.parseLong(br.readLine());
+		
+		System.out.println((int)Math.sqrt(N));
+	}
+}
