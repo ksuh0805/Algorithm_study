@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class Solution_주식가격 {
 	public static int[] solution(int[] prices) {
-		int[] answer = {};
-        ArrayList<Integer> list = new ArrayList<>();
+		int[] answer = new int[prices.length];
         for(int i = 0; i < prices.length; i++){
             int cur = prices[i];
             int t = 0;
@@ -13,11 +12,7 @@ public class Solution_주식가격 {
                 t++;
                 if(cur > prices[j]) break;
             }
-            list.add(t);
-        }
-        answer = new int[list.size()];
-        for(int i = 0; i < list.size(); i++){
-            answer[i] = list.get(i);
+            answer[i] = t;
         }
         return answer;
     }
