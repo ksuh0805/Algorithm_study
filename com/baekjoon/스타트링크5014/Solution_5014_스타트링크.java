@@ -29,7 +29,7 @@ public class Solution_5014_스타트링크 {
 			int pos = cur[0];
 			int cnt = cur[1];
 			if(pos == G) {
-				count = Math.min(count, cnt);
+				count = cnt;
 				return;
 			}
 			if(pos + U <= F && !visited[pos + U]) {
