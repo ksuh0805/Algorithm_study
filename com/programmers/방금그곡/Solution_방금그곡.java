@@ -20,6 +20,7 @@ public class Solution_방금그곡 {
         	}
         	sb.append(ms[3].substring(0,t % len));
         	String s = sb.toString();
+        	/*
         	outer:
         	for(int j = 0; j <= s.length() - m.length(); j++) {
         		if(m.charAt(0) == s.charAt(j)) {
@@ -32,6 +33,13 @@ public class Solution_방금그곡 {
         			}
         			break;
         		}
+        	}
+        	*/
+        	if(s.indexOf(m) > -1) {
+        		if(max < t) {
+    				max = t;
+    				answer = ms[2];
+    			}
         	}
         }
         return answer;
